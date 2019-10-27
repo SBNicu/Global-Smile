@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style media="screen">
+    body{
+      background-color: #333;
+      padding: 100px 100px 100px 100px;
+      }
+
+    #smile{
+      width: 200px;
+      height: 200px;
+      background-color: orange;
+      background: linear-gradient(orange 20%, yellow 30%, orange 40%, yellow 40%);/* Linear Gradient */
+      border-radius: 50%;
+      border-top: 10px solid red;
+    }
+    .eye{
+      width: 20px;
+      height: 20px;
+      background-color: white;
+      border: 2px solid black;
+      margin-top: 70px;
+      border-radius: 50%;
+      border-top-width: 5px;
+      text-shadow: 0 0 7px blue;
+      font-size: 30px;
+      line-height: 20px;
+
+    }
+    .left{
+      float: left;
+      margin-left: 50px;
+      animation: blink 0.25s 10;
+
+
+    }
+
+    .right{
+      float: right;
+      margin-right: 50px;
+      border-bottom-width: 6px;
+      border-bottom-color: red;
+    }
+    .mouth{
+      width: 100px;
+      height: 100px;
+      border-bottom: 10px solid black;
+      margin-left: 25%;
+      margin-top: 25%;
+      border-radius: 50%;
+      position:relative;
+       z-index 1;
+    }
+    .tongue{
+      background-color: #e54d7e;
+      width: 20px;
+      height: 26px;
+      margin-left: 125px;
+      border-radius: 0 0px 20px 20px;
+      margin-top: -15px;
+      transform: rotate(-30deg);
+    }
+
+    /*Css animation*/
+    @keyframes blink{
+      from{
+        transform: scaleY(1.0);
+
+      }
+
+      to{
+        transform: scaleY(0.1);
+
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div id="smile">
+            <div class="eye left">	&#9679;</div>
+            <div class="eye right">	&#9679;</div>
+            <div class="mouth"></div>
+            <div class="tongue"></div>
+ </div>
+
+</body>
+</html>
